@@ -6,6 +6,9 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+	<?php $featured = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full') ?>
+
+	<?php $featured = $featured[0]; ?>
 
 	<header class="header">
 		<div class="row">
@@ -17,6 +20,12 @@
 					'theme_location' => 'main_menu'
 				) ); ?>
 			</div>
-		</div>
-	</header>
+		</div> <!--/.row -->
+	</header> <!--/.header -->
+
+	<div class="wrapper" style="background-image:url(<?php echo $featured ?>);">
+		<div class="large-hero">
+			
+		</div> <!--/.large-hero -->
+	</div> <!--/.wrapper -->
 	
