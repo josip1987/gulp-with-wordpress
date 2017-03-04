@@ -1,0 +1,6 @@
+.parallax-divider {
+	background: url('app/assets/images/book.jpg') top center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}

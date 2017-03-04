@@ -1,5 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #333;
 }
 
@@ -8,10 +12,72 @@ img {
 	height: auto;
 }
 
-* {
-	box-sizing: border-box;
+a {
+	color: $mainRed;
+	text-decoration: none;
 }
 
-a {
-	color: orange;
+
+
+/*** popup 
+
+#pop-up{
+  position: relative; 
+  top: 200px; 
+  width: 500px; 
+  margin: 0 auto; 
+  text-align: center;
 }
+#pop-up .container{
+  background: #f0e4d4; 
+  padding: 30px; 
+  position: absolute; 
+  top: 50px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+#pop-up input{
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+.cross{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #555;
+  color: #ddd;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 11px;
+}
+
+#pop-up {
+	top: -400px;
+	transform-origin: 10px 10px;
+	animation: drop .5s ease forwards,
+			   swing 3s 2s ease forwards;
+}
+
+@keyframes drop {
+	0% {opacity: 0}
+	70% { transform: translateY(700px) }
+	100% { transform: translateY(650px); opacity: 1; }
+}
+
+@keyframes swing {
+	0% { transform: translateY(650px) rotateZ(0deg) }
+	40% { transform: translateY(650px) rotateZ(90deg) }
+	50% { transform: translateY(650px) rotateZ(70deg) }
+	60% { transform: translateY(650px) rotateZ(90deg) }
+	80% { transform: translateY(650px) rotateZ(70deg) }
+	90% { transform: translateY(650px) rotateZ(90deg) }
+	100% { transform: translateY(650px) rotateZ(75deg) }
+}
+
+***/

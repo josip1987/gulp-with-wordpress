@@ -5,7 +5,16 @@
 @import "base/_global";
 
 @import "modules/_large-hero";
+@import "modules/_latest-posts";
 @import "modules/_btn";
+@import "modules/_animations";
 @import "modules/_header";
+@import "modules/_mobile-navigation";
+@import "modules/_row";
+@import "modules/_wrapper";
+@import "modules/_section";
+@import "modules/_parallax-divider";
+@import "modules/_widgets";
+@import "modules/_footer";
 
 

@@ -1,0 +1,39 @@
+.latest-posts {
+	/*background: url('app/assets/images/books.jpg') top center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+	
+	&__content {
+		text-align: center;
+		/*max-width: 300px;*/
+		margin: 30px 10px;
+		padding: 40px 10px;
+		border: 1px solid rgba($mainGrey, .2);
+		border-radius: 3px;		
+		transition: transform .1s;
+ 
+		&--shadow {
+			box-shadow: 10px 10px 6px -6px rgba($mainGrey, .7);
+		}
+
+		&:hover {
+			transform: translate3d(0,-3px,0);
+			box-shadow: 10px 10px 6px -6px rgba($mainGrey, .9);
+		}
+	}
+
+	&__image {
+		border-radius: 3px;
+	}
+
+	&__image:hover {
+		transform: scale(1.02);
+		transition: 1s linear;
+		cursor: pointer;
+
+	}
+
+	&--date {
+		color: $mainGrey;
+	}
+}

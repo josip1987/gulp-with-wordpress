@@ -1,7 +1,55 @@
-.btn {
-	background-color: $mainBlue;
-	color: #FFF;
-	text-decoration: none;
-	padding: .75rem 1.2rem;
-	display: inline-block;
+/*.skew {
+    border: 1px solid rgba($mainGrey, .7);
+    border-radius: 3px;
+    transform: skew(-20deg);    
 }
+
+.noskew {
+    transform: skew(20deg);
+}*/
+
+.skew-button {
+	border: 1px solid rgba($mainGrey, .7);
+    border-radius: 3px;
+    background: #FFF;
+    transform: skew(-20deg);
+}
+
+.skew-button a {
+    position: relative;
+    display:block;
+    text-decoration:none;
+    z-index: 10;
+    transform: skew(20deg);
+    color: $mainGrey;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.skew-button:hover a {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.skew-button:after {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    color: #fff;
+    height: 100%;
+    background: rgba($mainGrey, .9);
+    opacity: 0;  
+    transition: all .2s linear;
+}
+
+.skew-button:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+

@@ -1,0 +1,56 @@
+.section {
+	padding: 4.5rem 0;
+
+    &--about {
+        padding-bottom: 3rem;
+    }
+}
+
+.section-title {
+	position: relative;
+    width: auto;
+    height: auto;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+
+    @mixin atMedium {
+        font-size: 5rem;
+    }
+
+    &--base {
+    	color: $mainGrey;
+    }
+
+	&--shadow {
+	    font-size: 3.5rem;
+	    font-weight: 900;
+	    text-transform: uppercase;
+	    left: 0;
+	    opacity: 0.05;
+	    position: absolute;
+        bottom: 0;
+
+        @mixin atMedium {
+            font-size: 8rem;
+            top: -45px;
+        }
+	}
+
+    &--footer {
+        color: #FFF;
+    }
+}
+
+.section-title::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    /*margin: 15px 0 20px;*/
+    top: -5px;
+    background-color: $mainBlack;
+}

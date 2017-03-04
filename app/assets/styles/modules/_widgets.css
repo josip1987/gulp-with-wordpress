@@ -1,0 +1,22 @@
+.contact__widget li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+/*
+.contact__widget textarea {
+	height: 75px;
+}
+
+.contact__widget textarea, .contact__widget input {
+	width: 100%;
+}
+
+.moveup {
+	
+	@mixin atMedium {
+		position: absolute;
+		top: 0;
+		right: 5%;
+	}
+}*/

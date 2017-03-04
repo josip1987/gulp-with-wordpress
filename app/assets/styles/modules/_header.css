@@ -1,3 +1,55 @@
-header {
-	background-color: rgba(255, 255, 100, .5);
+.header {
+	background-color: rgba(255, 255, 255, .7);
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	position: fixed;
+	z-index: 10;
+
+	&--wrapper {
+
+		@mixin atMedium {
+			padding-left: 18px;
+			padding-right: 18px;
+			max-width: 1236px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__logo img {
+		float: left;
+		/*height: 70px;*/
+		position: absolute;
+		top: -30px;
+	}
+
+	&__menu {
+		float: right;
+
+		& ul {
+			padding: 0px;
+			@mixin clearfix;
+		}
+
+		& li {
+			list-style: none;
+			padding: 10px 0;
+			margin-left: 15px;
+			float: left;
+			text-decoration: none;
+			font-size: 1.2rem;
+			/*transform: skew(-20deg);
+			background-color: lightgreen;*/
+			padding: 10px;			
+		}
+
+		& a {
+			color: $mainGrey;
+
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
 }
