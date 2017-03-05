@@ -2,7 +2,23 @@
 	padding: 4.5rem 0;
 
     &--about {
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+
+        @mixin atMedium {
+            padding-bottom: 3rem;
+            padding-top: 4.5rem;
+        }
+    }
+
+    &--latest-posts {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+        @mixin atMedium {
+            padding-top: 4.5rem;
+            padding-bottom: 4rem;
+        }
     }
 }
 
