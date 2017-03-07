@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<h1>page.php</h1>
 <section class="container content">
 	<div class="row">
 	<h5>page.php</h5>

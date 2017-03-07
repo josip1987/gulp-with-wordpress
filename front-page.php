@@ -26,7 +26,13 @@
 <div class="section parallax-divider" id="parlx">
 	<div class="wrapper">
 		<div class="parallax-divider__image">
-			<h2>Social widget here</h2>
+			<ul class="parallax-divider__list">
+				<li>HTML/CSS</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+				<li>Design</li>
+				<li>Responsive</li>
+			</ul>
 		</div>
 	</div>
 </div>

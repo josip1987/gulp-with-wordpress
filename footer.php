@@ -22,6 +22,7 @@
 							<!--div class="moveup">
 								<?php dynamic_sidebar('contact_widget'); ?>
 							</div-->
+							<h3>Latest entries</h3>
 						</div> <!--/.row__large-4 -->
 					</div>
 				</div> <!--/.row -->
