@@ -654,6 +654,14 @@ a {
 	position: absolute;
 	position: fixed;
 	z-index: 10;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.header--darker {
+  background-color: rgba(74,189,172, .9);
+}
+.header--darker .header__menu ul li a {
+  color: #fff;
 }
 @media(min-width: 800px) {
   .header--wrapper {
@@ -668,6 +676,21 @@ a {
   float: left;/*height: 70px;*/
   position: absolute;
   top: -30px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+@media(min-width: 800px) {
+  .header__logo img {
+    float: left;/*height: 70px;*/
+    position: absolute;
+    top: -30px;
+  }
+  .header--darker .header__logo img {
+    -webkit-transform: scale(.5);
+            transform: scale(.5);
+    top: -65px;
+    left: 20px;
+  }
 }
 .header__menu {
   float: right;

@@ -5,6 +5,15 @@
 	position: absolute;
 	position: fixed;
 	z-index: 10;
+	transition: all .3s ease;
+
+	&--darker {
+		background-color: rgba($primary, .9);
+
+		.header__menu ul li a {
+			color: #fff;
+		}
+	}
 
 	&--wrapper {
 
@@ -22,6 +31,20 @@
 		/*height: 70px;*/
 		position: absolute;
 		top: -30px;
+		transition: all .3s ease;
+		
+		@mixin atMedium {
+			float: left;
+			/*height: 70px;*/
+			position: absolute;
+			top: -30px;
+
+			.header--darker & {
+				transform: scale(.5);
+				top: -65px;
+				left: 20px;
+			}
+		}
 	}
 
 	&__menu {

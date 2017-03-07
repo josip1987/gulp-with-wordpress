@@ -6,9 +6,7 @@
    	    wp_enqueue_style('bangers', "https://fonts.googleapis.com/css?family=Bangers");
 
    	    wp_enqueue_script('jquery');
-   	    wp_enqueue_script('wow', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js');
-   	    //wp_enqueue_script('script', get_stylesheet_directory_uri() . '/app/assets/scripts/script.js', array('jquery'), '1.0', true);
-	
+		wp_enqueue_script('wow', get_stylesheet_directory_uri() . '/node_modules/wow.js/dist/wow.min.js');
    	    wp_enqueue_script('App', get_stylesheet_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
 	}
 
