@@ -12,7 +12,7 @@ class StickyHeader {
 		var that = this; //point to StickyHeader
 		new Waypoint({
 			element: this.headerTrigger[0], 
-			//Waypoints wants JS native element, not jQuery object,
+			//Waypoints wants JS native element, not jQuery object
 			//access native DOM element in jQuery object, first item
 			//in jQuery array-like object is always a point to native DOM element
 			handler: function(direction) {

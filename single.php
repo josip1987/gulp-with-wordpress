@@ -1,1 +1,1 @@
-<h1>single.php</h1>
+<h1>single.php - Blog Post</h1>

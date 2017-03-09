@@ -12,6 +12,10 @@
 
 		.header__menu ul li a {
 			color: #fff;
+
+			&:hover {
+				color: $mainBlack;
+			}
 		}
 	}
 

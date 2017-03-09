@@ -13,7 +13,7 @@ class MobileMenu {
 
 	toggleTheMenu() {
 		this.menuOpen.toggleClass("open");
-		$(".header__toggle").toggleClass("header__toggle--close-x");
+		this.menuIcon.toggleClass("header__toggle--close-x");
 	}
 }
 

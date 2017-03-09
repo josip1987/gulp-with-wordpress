@@ -23,15 +23,18 @@
 
 <!-- Parallax divider -->
 
-<div class="section parallax-divider" id="parlx">
+<div class="section categories" id="parlx">
 	<div class="wrapper">
-		<div class="parallax-divider__image">
-			<ul class="parallax-divider__list">
-				<li>HTML/CSS</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Design</li>
-				<li>Responsive</li>
+		<div class="categories__content">
+			<?php $categories = get_categories(); ?>
+			<ul class="categories__list">
+				<?php foreach ($categories as $category): ?>
+					<li>
+						<a href="<?php echo get_category_link($category->cat_ID); ?>">
+							<?php echo $category->name; ?>
+						</a>
+					</li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</div>

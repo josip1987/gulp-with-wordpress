@@ -10332,7 +10332,7 @@ var MobileMenu = function () {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
 			this.menuOpen.toggleClass("open");
-			(0, _jquery2.default)(".header__toggle").toggleClass("header__toggle--close-x");
+			this.menuIcon.toggleClass("header__toggle--close-x");
 		}
 	}]);
 
@@ -10380,7 +10380,7 @@ var SmoothScroll = function () {
 		key: "scrollDown",
 		value: function scrollDown() {
 			(0, _jquery2.default)("body").animate({
-				scrollTop: this.topValue
+				scrollTop: this.topValue - 70 + 'px'
 			}, 1000);
 		}
 	}]);
@@ -10439,7 +10439,7 @@ var StickyHeader = function () {
 			var that = this; //point to StickyHeader
 			new Waypoint({
 				element: this.headerTrigger[0],
-				//Waypoints wants JS native element, not jQuery object,
+				//Waypoints wants JS native element, not jQuery object
 				//access native DOM element in jQuery object, first item
 				//in jQuery array-like object is always a point to native DOM element
 				handler: function handler(direction) {
