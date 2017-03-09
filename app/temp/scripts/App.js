@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10358,7 +10358,65 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _noframework = __webpack_require__(3);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var SmoothScroll = function () {
+	function SmoothScroll() {
+		_classCallCheck(this, SmoothScroll);
+
+		this.scrollButton = (0, _jquery2.default)("#scroll-down");
+		this.topValue = (0, _jquery2.default)("#scroll").offset().top;
+		this.events();
+	}
+
+	_createClass(SmoothScroll, [{
+		key: "events",
+		value: function events() {
+			this.scrollButton.click(this.scrollDown.bind(this));
+		}
+	}, {
+		key: "scrollDown",
+		value: function scrollDown() {
+			(0, _jquery2.default)("body").animate({
+				scrollTop: this.topValue
+			}, 1000);
+		}
+	}]);
+
+	return SmoothScroll;
+}();
+
+exports.default = SmoothScroll;
+
+/*
+$(document).ready(function() {
+	$("#scroll-down").click(function(){
+		$val = $("#scroll").offset().top;
+		$("body").animate({scrollTop:$val}, 1000);
+	});
+});
+*/
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(4);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
@@ -10401,7 +10459,7 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 /*!
@@ -11164,7 +11222,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 ;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11174,14 +11232,19 @@ var _MobileMenu = __webpack_require__(1);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _StickyHeader = __webpack_require__(2);
+var _StickyHeader = __webpack_require__(3);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
+
+var _SmoothScroll = __webpack_require__(2);
+
+var _SmoothScroll2 = _interopRequireDefault(_SmoothScroll);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
+var smoothScroll = new _SmoothScroll2.default();
 
 new WOW().init();
 

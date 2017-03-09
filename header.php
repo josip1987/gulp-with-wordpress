@@ -42,7 +42,7 @@
 						bounceInRight" data-wow-delay="2s">&#46;com</span>
 					</h2>
 				</div>
-				<div class="arrow">
+				<div class="arrow" id="scroll-down">
 					<a href="#"><span></span>Scroll down</a>
 				</div>
 			</div> <!--/.large-hero__text-content -->

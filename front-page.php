@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<!--?php get_sidebar(); ?-->
 
-<div class="section section--about about">
+<div class="section section--about about" id="scroll">
 	<div class="wrapper">
 		<div class="section-title wow jello">
 			<span class="section-title--base">About</span>
