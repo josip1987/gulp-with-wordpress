@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<!--?php get_sidebar(); ?-->
 
-<div class="section section--about about" id="scroll">
+<div class="section section--about about">
 	<div class="wrapper">
 		<div class="section-title wow jello">
 			<span class="section-title--base">About</span>
@@ -21,24 +21,33 @@
 	</div> <!--/.wrapper -->
 </div> <!--/.section .about -->
 
-<!-- Parallax divider -->
-
-<div class="section categories" id="parlx">
+<div class="section section--about about">
 	<div class="wrapper">
-			<?php $categories = get_categories(); ?>
-			<ul class="categories__list">
-				<?php foreach ($categories as $category): ?>
-					<li class="categories__list--item">
-						<a href="<?php echo get_category_link($category->cat_ID); ?>">
-							<?php echo $category->name; ?>
-						</a>
-					</li>
-				<?php endforeach; ?>
-			</ul> <!--/.categories__list -->
+		<div class="section-title wow jello">
+			<span class="section-title--base">Categories</span>
+			<span class="section-title--shadow">Categories</span>
+		</div>
+	</div> <!--/.wrapper -->
+</div> <!--/.section .about -->
+
+<!-- Categories -->
+
+<div class="section categories categories--overlay" id="parlx">
+	<div class="wrapper">
+		<?php $categories = get_categories(); ?>
+		<ul class="categories__list">
+			<?php foreach ($categories as $category): ?>
+				<li class="categories__list--item">
+					<a href="<?php echo get_category_link($category->cat_ID); ?>">
+						<?php echo $category->name; ?>
+					</a>
+				</li>
+			<?php endforeach; ?>
+		</ul> <!--/.categories__list -->
 	</div> <!--/.wrapper -->
 </div>
 
-<!-- End parallax divider -->
+<!-- End categories -->
 
 <div class="section section--latest-posts latest-posts">
 	<div class="wrapper">
@@ -59,7 +68,7 @@
 
 			<?php $entries = new WP_Query($args); while($entries->have_posts()): $entries->the_post(); ?>
 				
-				<div class="row__medium-4">
+				<div class="row__medium-4 row__medium-4--posts">
 					<div class="latest-posts__content latest-posts__content--shadow wow bounceInLeft">
 						<?php the_post_thumbnail('entry', array('class' => 'latest-posts__image')); ?>
 						<h3 class="latest-posts--title"><?php the_title(); ?></h3>

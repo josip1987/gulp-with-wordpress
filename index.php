@@ -1,5 +1,4 @@
 <?php get_header('blog'); ?>
-<h1>index.php</h1>
 <div class="section section--latest-posts latest-posts">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
@@ -14,7 +13,7 @@
 		</div>
 		<div class="row">
 			<?php $args = array(
-				'posts_per_page' => 6
+				'posts_per_page' => -1
 			); ?>
 
 			<?php $entries = new WP_Query($args); while($entries->have_posts()): $entries->the_post(); ?>

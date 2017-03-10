@@ -18,11 +18,18 @@
 							   ab aperiam. Assumenda, perferendis.
 							</p>
 						</div> <!--/.row__large-8 -->
-						<div class="row__large-4 contact__widget">
-							<!--div class="moveup">
-								<?php dynamic_sidebar('contact_widget'); ?>
-							</div-->
-							<h3>Latest entries</h3>
+						<div class="row__large-4 footer_menu">
+							<!--?php dynamic_sidebar('contact_widget'); ?-->
+							<?php 
+								wp_nav_menu(array(
+									'theme_location' => 'social_menu',
+									'container' => 'div',
+									'container_class' => 'social',
+									'menu_class' => 'social-menu',
+									'link_before' => '<span class="sr-only">',
+									'link_after' => '</span>'
+								) );
+							?>
 						</div> <!--/.row__large-4 -->
 					</div>
 				</div> <!--/.row -->

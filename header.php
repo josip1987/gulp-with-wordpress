@@ -43,7 +43,7 @@
 					</h2>
 				</div>
 				<div class="arrow" id="scroll-down">
-					<a href="#"><span></span>Scroll down</a>
+					<a href="#" id="scroll"><span></span>Scroll down</a>
 				</div>
 			</div> <!--/.large-hero__text-content -->
 		</div> <!--/.large-hero -->

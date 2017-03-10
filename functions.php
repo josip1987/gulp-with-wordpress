@@ -2,6 +2,7 @@
 	function blog_styles() {
 		wp_enqueue_style('blog_stylesheet', get_stylesheet_uri());
 		wp_enqueue_style('animate', get_stylesheet_directory_uri() . '/node_modules/animate.css/animate.min.css');
+		wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/node_modules/font-awesome/css/font-awesome.min.css');
 		wp_enqueue_style('raleway', "https://fonts.googleapis.com/css?family=Raleway:400");
    	    wp_enqueue_style('bangers', "https://fonts.googleapis.com/css?family=Bangers");
 
@@ -13,7 +14,8 @@
 	add_action('wp_enqueue_scripts', 'blog_styles');
 
 	register_nav_menus( array(
-		'main_menu' => __('Main Menu', 'blogmenu')
+		'main_menu' => __('Main Menu', 'blogmenu'),
+		'social_menu' => __('Social Menu', 'socialmenu')
 	) );
 
 	//hook last item to wp_nav_menu

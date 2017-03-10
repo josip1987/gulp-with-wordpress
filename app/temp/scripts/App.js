@@ -10380,7 +10380,7 @@ var SmoothScroll = function () {
 		key: "scrollDown",
 		value: function scrollDown() {
 			(0, _jquery2.default)("body").animate({
-				scrollTop: this.topValue - 70 + 'px'
+				scrollTop: this.topValue + 70 + 'px'
 			}, 1000);
 		}
 	}]);
