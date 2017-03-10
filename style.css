@@ -742,10 +742,10 @@ a {
   background-color: #161616;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: -webkit-transform .15s ease-out;
+  transition: -webkit-transform .15s ease-out;
+  transition: transform .15s ease-out;
+  transition: transform .15s ease-out, -webkit-transform .15s ease-out;
 }
 .header__toggle--middle {
   content: "";
@@ -755,8 +755,8 @@ a {
   width: 20px;
   height: 3px;
   background-color: #161616;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
 }
@@ -770,10 +770,10 @@ a {
   background-color: #161616;
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: -webkit-transform .15s ease-out;
+  transition: -webkit-transform .15s ease-out;
+  transition: transform .15s ease-out;
+  transition: transform .15s ease-out, -webkit-transform .15s ease-out;
 }
 .header__toggle--close-x::before {
   -webkit-transform: rotate(45deg) scaleX(1.25);
@@ -797,6 +797,9 @@ a {
   .header__menu {
     width: 100%;
     right: 0;
+  }
+  .menu-main-menu-container {
+    height: 0px;
   }
   .header__logo img {
     height: 100px;
@@ -950,6 +953,21 @@ a {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 200px;
+}
+.categories__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.categories__list--item {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.categories__list--item a {
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
 }
 .contact__widget li {
 		list-style: none;

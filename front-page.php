@@ -25,19 +25,17 @@
 
 <div class="section categories" id="parlx">
 	<div class="wrapper">
-		<div class="categories__content">
 			<?php $categories = get_categories(); ?>
 			<ul class="categories__list">
 				<?php foreach ($categories as $category): ?>
-					<li>
+					<li class="categories__list--item">
 						<a href="<?php echo get_category_link($category->cat_ID); ?>">
 							<?php echo $category->name; ?>
 						</a>
 					</li>
 				<?php endforeach; ?>
-			</ul>
-		</div>
-	</div>
+			</ul> <!--/.categories__list -->
+	</div> <!--/.wrapper -->
 </div>
 
 <!-- End parallax divider -->

@@ -11,6 +11,7 @@
 		</div>
 		<div class="row">
 			<?php $args = array(
+				//'post_type' => 'blog_post',
 				'posts_per_page' => 6 //-1 for all
 			); ?>
 
@@ -29,7 +30,7 @@
 							<a href="<?php the_permalink(); ?>">Read more</a>
 						</button>					
 					</div>
-				</div>
+				</div> <!--/.row__medium-4 -->
 			<?php endwhile; wp_reset_postdata(); ?>
 		</div> <!--/.row -->
 	</div> <!--/.wrapper -->
