@@ -551,6 +551,9 @@ a {
 .latest-posts--date {
   color: #4ABDAC;
 }
+.latest-posts--front-page {
+  margin-bottom: 3.5rem;
+}
 /*.skew {
     border: 1px solid rgba($mainGrey, .7);
     border-radius: 3px;
@@ -776,14 +779,12 @@ a {
   background-color: #161616;
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
-  -webkit-transition: -webkit-transform .15s ease-out;
-  transition: -webkit-transform .15s ease-out;
-  transition: transform .15s ease-out;
-  transition: transform .15s ease-out, -webkit-transform .15s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 .header__toggle--close-x::before {
-  -webkit-transform: rotate(45deg) scaleX(1.25);
-          transform: rotate(45deg) scaleX(1.25);
+  -webkit-transform: rotate(405deg) scaleX(1.25);
+          transform: rotate(405deg) scaleX(1.25);/*original: 45deg*/
 }
 .header__toggle--close-x .header__toggle--middle {
   opacity: 0;
@@ -791,8 +792,8 @@ a {
           transform: scaleX(0);
 }
 .header__toggle--close-x::after {
-  -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-          transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+  -webkit-transform: rotate(315deg) scaleX(1.25) translateY(1px);
+          transform: rotate(315deg) scaleX(1.25) translateY(1px);/*-45deg*/
 }
 @media(min-width: 800px) {
   .header__toggle {
@@ -915,7 +916,25 @@ a {
 @media(min-width: 800px) {
   .section--latest-posts {
     padding-top: 4.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
+  }
+}
+.section--pagination {
+  padding: .5rem;
+  background-color: #F7B733;
+  color: #161616;
+  text-align: center;
+  margin-top: 0;
+  width: 300px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+@media(min-width: 800px) {
+  .section--pagination {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
 .section-title {
@@ -995,6 +1014,29 @@ a {
 }
 .categories__list--item a:hover {
   color: #161616;
+}
+.pagination {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 1.1rem;
+}
+.pagination a {
+  color: #fff;
+}
+.pagination::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.custom-pagination .page-numbers {
+  color: #161616;
+}
+.custom-pagination .current {
+  color: #fff;
+}
+.custom-pagination .prev, .custom-pagination .next {
+  color: #fff;
 }
 .contact__widget li {
 		list-style: none;

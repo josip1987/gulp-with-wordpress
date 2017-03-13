@@ -41,12 +41,12 @@
 		height: 3px;
 		background-color: $mainBlack;
 		transform-origin: 0 100%;
-		transition: transform .15s ease-out;
+		transition: all .3s ease-out;
 	}
 
 	&--close-x {
 		&::before {
-			transform: rotate(45deg) scaleX(1.25);
+			transform: rotate(405deg) scaleX(1.25); /*original: 45deg*/
 		}
 
 		.header__toggle--middle {
@@ -55,7 +55,7 @@
 		}
 
 		&::after {
-			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			transform: rotate(315deg) scaleX(1.25) translateY(1px); /*-45deg*/
 		}
 	}
 

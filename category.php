@@ -12,7 +12,7 @@
 		<div class="row">
 			<?php $args = array(
 				//'post_type' => 'blog_post',
-				'posts_per_page' => 6 //-1 for all
+				'posts_per_page' => -1
 			); ?>
 
 			<?php while(have_posts() ): the_post(); ?>

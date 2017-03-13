@@ -10429,7 +10429,7 @@ var StickyHeader = function () {
 		_classCallCheck(this, StickyHeader);
 
 		this.siteHeader = (0, _jquery2.default)(".header");
-		this.headerTrigger = (0, _jquery2.default)(".large-hero__title");
+		this.headerTrigger = (0, _jquery2.default)(".large-hero__subtitle");
 		this.createHeaderWaypoint();
 	}
 

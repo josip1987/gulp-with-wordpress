@@ -33,15 +33,29 @@
 		background-attachment: fixed; background-position: center center;">
 		<div class="wrapper">
 			<div class="large-hero__text-content">
-				<?php $description = get_bloginfo('description', 'display'); ?>
-				<h1 class="large-hero__title wow bounceInRight">welcome to</h1>
-				<div class="large-hero__subtitle">
-					<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
-						<?php echo $description; ?>
-						<span class="large-hero__subtitle--add wow 
-						bounceInRight" data-wow-delay="2s">&#46;com</span>
-					</h2>
-				</div>
+				<?php if(is_front_page()): ?>
+					<?php $description = get_bloginfo('description', 'display'); ?>
+					<h1 class="large-hero__title wow bounceInRight">welcome to</h1>
+					<div class="large-hero__subtitle">
+						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
+							<?php echo $description; ?>
+							<span class="large-hero__subtitle--add wow 
+							bounceInRight" data-wow-delay="2s">&#46;com</span>
+						</h2>
+					</div>
+				<?php elseif (is_category()): ?>
+					<div class="large-hero__subtitle">
+						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
+							<?php echo the_archive_title(); ?>
+						</h2>
+					</div>
+				<?php else: ?>
+					<div class="large-hero__subtitle">
+						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
+							<?php echo the_title(); ?>
+						</h2>
+					</div>
+				<?php endif; ?>
 				<div class="arrow" id="scroll-down">
 					<a href="#" id="scroll"><span></span>Scroll down</a>
 				</div>

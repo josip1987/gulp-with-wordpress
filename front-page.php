@@ -49,7 +49,7 @@
 
 <!-- End categories -->
 
-<div class="section section--latest-posts latest-posts">
+<div class="section section--latest-posts latest-posts latest-posts--front-page">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
 			<span class="section-title--base">Latest entries</span>

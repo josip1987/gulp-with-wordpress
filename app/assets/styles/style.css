@@ -14,6 +14,7 @@
 @import "modules/_wrapper";
 @import "modules/_section";
 @import "modules/_categories";
+@import "modules/_pagination";
 @import "modules/_widgets";
 @import "modules/_footer";
 

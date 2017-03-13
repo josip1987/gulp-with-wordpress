@@ -4,7 +4,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class StickyHeader {
 	constructor() {
 		this.siteHeader = $(".header");
-		this.headerTrigger = $(".large-hero__title");
+		this.headerTrigger = $(".large-hero__subtitle");
 		this.createHeaderWaypoint();
 	}
 

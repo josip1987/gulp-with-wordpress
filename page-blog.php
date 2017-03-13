@@ -1,9 +1,8 @@
 <?php get_header('blog'); 
 /*
-* Template Name: Blog temp
+* Template Name: Blog Template
 */
 ?>
-<h1>page-blog.php</h1>
 <div class="section section--latest-posts latest-posts">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
@@ -18,13 +17,13 @@
 		</div>
 		<div class="row">
 			<!--<?php $args = array(
-				'posts_per_page' => -1
+				'posts_per_page' => 6
 			); ?> -->
 
 			<?php 
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
-					'posts_per_page' => 3,
+					'posts_per_page' => 6,
 					'paged' => $paged
 				);
 			?>
@@ -49,17 +48,22 @@
 
 			<?php endwhile; wp_reset_postdata(); ?>
 
-			<ul class="pagination clear">
-				<li>
-					<?php 
-						if(function_exists(custom_pagination)) {
-							custom_pagination($entries->max_num_pages,"",$paged);
-						}
-					?>
-				</li>
-			</ul>
 		</div> <!--/.row -->
 	</div> <!--/.wrapper -->
 </div> <!--/.section .latest-posts -->
+
+<div class="section section--pagination">
+	<div class="wrapper">
+		<ul class="pagination">
+			<li>
+				<?php 
+					if(function_exists(custom_pagination)) {
+						custom_pagination($entries->max_num_pages,"",$paged);
+					}
+				?>
+			</li>
+		</ul> <!--/.pagination -->
+	</div> <!--/.wrapper -->
+</div> <!--/.section .pagination -->
 
 <?php get_footer(); ?>
