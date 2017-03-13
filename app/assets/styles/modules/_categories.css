@@ -1,6 +1,6 @@
 .categories {
-	/*background: linear-gradient(rgba($primary, 0.5), rgba($third, 0.7)), url('app/assets/images/book.jpg') top center no-repeat;*/
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('app/assets/images/book.jpg') top center no-repeat;
+	background: linear-gradient(rgba($primary, 0.9), rgba($primary, 0.9)), url('app/assets/images/book.jpg') top center no-repeat;
+	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('app/assets/images/book.jpg') top center no-repeat;*/
 	background-size: cover;
 	background-attachment: fixed;
 	height: 200px;
@@ -19,15 +19,16 @@
 		&:not(:first-child)::before {
 			content: "•";
 			margin-right: 10px;
-			color: $mainBlack;
+			color: #fff;
 		}
 
 		& a {
-			color: $mainBlack;
+			color: #fff;
 			text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+			transition: color .3s ease;
 
 			&:hover {
-				color: #fff;
+				color: $mainBlack;
 			}
 		}
 	}

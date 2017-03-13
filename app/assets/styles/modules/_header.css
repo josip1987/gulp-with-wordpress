@@ -74,9 +74,10 @@
 
 		& a {
 			color: $mainGrey;
+			transition: color .3s ease;
 
 			&:hover {
-				color: $secondary;
+				color: $mainBlack;
 			}
 		}
 	}

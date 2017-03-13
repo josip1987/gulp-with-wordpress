@@ -1,5 +1,9 @@
-<?php get_header('blog'); ?>
-<h1>index.php</h1>
+<?php get_header('blog'); 
+/*
+* Template Name: Blog temp
+*/
+?>
+<h1>page-blog.php</h1>
 <div class="section section--latest-posts latest-posts">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
@@ -20,7 +24,7 @@
 			<?php 
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
-					'posts_per_page' => 6,
+					'posts_per_page' => 3,
 					'paged' => $paged
 				);
 			?>
