@@ -5,8 +5,8 @@
 	@mixin atSmall {
 		height: 600px;
 	}
-	
-	/*clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
+
+	clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
 	&__text-content {
 		position: absolute;
@@ -59,4 +59,9 @@
 			font-size: 5rem;
 		}
 	}
+}
+
+.page-template-page-blog .large-hero__subtitle, .page-template-page-contact .large-hero__subtitle {
+		color: $third;
+		text-shadow: 5px 5px 0 rgba($primary, .9);
 }
