@@ -10365,14 +10365,38 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Modal = function () {
 	function Modal() {
 		_classCallCheck(this, Modal);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal");
+		this.modal = (0, _jquery2.default)(".modal");
+		this.closeModalButton = (0, _jquery2.default)(".modal__close");
+		this.events();
 	}
 
 	_createClass(Modal, [{
-		key: 'events',
-		value: function events() {}
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+			this.closeModalButton.click(this.closeModal.bind(this));
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
 	}, {
-		key: 'toggleModal',
-		value: function toggleModal() {}
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modal--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modal--is-visible");
+		}
 	}]);
 
 	return Modal;

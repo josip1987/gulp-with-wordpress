@@ -20,7 +20,7 @@
 
 	//hook last item to wp_nav_menu
 	function add_last_nav_item($items) {
-	  return $items .= '<li><a href="#myModal" role="button" data-toggle="modal">Search</a></li>';
+	  return $items .= '<li><a href="#" class="open-modal">Search</a></li>';
 	}
 
 	add_filter('wp_nav_menu_items','add_last_nav_item');

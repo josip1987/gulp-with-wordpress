@@ -39,6 +39,15 @@
 				</p>
 		  	</div> <!--/.wrapper -->
 		</footer> <!--/.footer -->
+		
+		<div class="modal">
+			<div class="modal__inner">
+				<div class="wrapper">
+					<h1>Search</h1>
+				</div>
+			</div>
+			<div class="modal__close">X</div>
+		</div> <!--/.modal -->
 
 		<?php wp_footer(); ?> <!-- load js file at the bottom -->
 	
