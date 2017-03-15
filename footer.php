@@ -34,8 +34,8 @@
 					</div>
 				</div> <!--/.row -->
 
-				<p class="site-info">
-					Created by Josip Susic &#124; <?php echo date('Y'); ?>
+				<p class="footer__info">
+					Created by Josip Susic &#124; &#169; Random Coding Tutorials <?php echo date('Y'); ?>
 				</p>
 		  	</div> <!--/.wrapper -->
 		</footer> <!--/.footer -->
@@ -43,7 +43,7 @@
 		<div class="modal">
 			<div class="modal__inner">
 				<div class="wrapper">
-					<h1>Search</h1>
+					<?php dynamic_sidebar('search_widget'); ?>
 				</div>
 			</div>
 			<div class="modal__close">X</div>

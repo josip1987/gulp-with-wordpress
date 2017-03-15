@@ -30,3 +30,9 @@
         opacity: 0;
     }
 }
+
+.page-template-page-blog .arrow a span, 
+.page-template-page-contact .arrow a span {
+        color: $third;
+        text-shadow: 5px 5px 0 rgba($primary, .9);
+}

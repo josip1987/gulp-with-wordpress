@@ -1,4 +1,41 @@
 .contact-form {
-	text-align: center;
 	list-style: none;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 0 50px 0;
+
+
+	& input, & textarea {
+		width: 100%;
+		padding: 5px;
+		font-family: 'Raleway', sans-serif;
+		border: 1px solid $primary;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: rgba($primary, .1);
+		}
+	}
+}
+
+div.wpcf7-response-output {
+	border: 1px solid $primary;
+	border-radius: 5px;
+}
+
+div.wpcf7-validation-errors {
+	border: 1px solid $secondary;
+}
+
+.wpcf7-submit {
+	background-color: transparent;
+	cursor: pointer;
+	color: $primary;
+	font-weight: bold;
+	transition: all .3s ease;
+
+	&:hover {
+		background-color: $primary!important;
+		color: #fff;
+	}
 }

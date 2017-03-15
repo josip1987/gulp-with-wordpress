@@ -35,6 +35,18 @@
 			'id' => 'contact_widget',
 			'description' => 'Contact Widgets'
 		) );
+
+		register_sidebar(array(
+			'name' => __('Sidebar Widget'),
+			'id' => 'sidebar_widget',
+			'description' => 'Sidebar Widgets'
+		) );
+
+		register_sidebar(array(
+			'name' => __('Search Widget'),
+			'id' => 'search_widget',
+			'description' => 'Search Widget'
+		) );
 	}
 
 	add_action('widgets_init', 'blog_widgets');

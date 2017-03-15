@@ -6,7 +6,7 @@
 		height: 600px;
 	}
 
-	clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	/*clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
 
 	&__text-content {
 		position: absolute;
@@ -61,7 +61,9 @@
 	}
 }
 
-.page-template-page-blog .large-hero__subtitle, .page-template-page-contact .large-hero__subtitle {
-		color: $third;
+.page-template-page-blog .large-hero__subtitle, 
+.page-template-page-contact .large-hero__subtitle {
+		color: $mainBrown;
 		text-shadow: 5px 5px 0 rgba($primary, .9);
+		-webkit-text-stroke: 1px black;
 }

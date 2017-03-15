@@ -10,6 +10,10 @@
 			color: #fff;
 		}
 	}
+
+	&__info {
+		text-align: center;
+	}
 }
 
 .social-menu li:last-child {
