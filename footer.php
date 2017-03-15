@@ -43,7 +43,7 @@
 		<div class="modal">
 			<div class="modal__inner">
 				<div class="wrapper">
-					<?php dynamic_sidebar('search_widget'); ?>
+					<?php get_search_form(); ?>
 				</div>
 			</div>
 			<div class="modal__close">X</div>

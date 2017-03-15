@@ -26,6 +26,7 @@
 	add_filter('wp_nav_menu_items','add_last_nav_item');
 
 	add_theme_support('post-thumbnails' );
+	add_theme_support('html5', array('search-form'));
 
 	add_image_size('entry', 400, 150, true);
 
@@ -40,12 +41,6 @@
 			'name' => __('Sidebar Widget'),
 			'id' => 'sidebar_widget',
 			'description' => 'Sidebar Widgets'
-		) );
-
-		register_sidebar(array(
-			'name' => __('Search Widget'),
-			'id' => 'search_widget',
-			'description' => 'Search Widget'
 		) );
 	}
 
