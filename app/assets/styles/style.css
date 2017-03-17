@@ -18,7 +18,9 @@
 @import "modules/_widgets";
 @import "modules/_contact";
 @import "modules/_single-post";
+@import "modules/_sidebar";
 @import "modules/_modal";
+@import "modules/_search-form";
 @import "modules/_footer";
 
 

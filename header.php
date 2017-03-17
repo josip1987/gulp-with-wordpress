@@ -13,7 +13,9 @@
 	<header class="header">
 		<div class="header--wrapper">
 			<div class="header__logo">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/logo.png" alt="Logo Image">
+				<a href="<?php echo esc_url(home_url('/')) ?>">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/logo.png" alt="Logo Image">
+				</a>
 				<div class="header__toggle">
 					<div class="header__toggle--middle"></div>
 				</div>

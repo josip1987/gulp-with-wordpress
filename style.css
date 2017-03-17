@@ -389,6 +389,9 @@ a {
 	color: #FF4500;
 	text-decoration: none;
 }
+hr {
+  border: 1px dotted rgba(247,183,51, .7);
+}
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
@@ -564,6 +567,16 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   color: #4ABDAC;
 }
 .latest-posts--front-page {
+  margin-bottom: 3.5rem;
+}
+.latest-posts--category {
+  margin-bottom: 3.5rem;
+}
+.latest-posts--single {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.latest-posts--search {
   margin-bottom: 3.5rem;
 }
 /*.skew {
@@ -1123,6 +1136,13 @@ div.wpcf7-validation-errors {
 .single-post .section {
   padding: 2rem 0 1rem 0;
 }
+.aside {
+	list-style: none;
+}
+.aside ul {
+  list-style: none;
+  padding-right: 0;
+}
 .modal {
 	position: fixed;
 	z-index: 9999;
@@ -1157,10 +1177,46 @@ div.wpcf7-validation-errors {
   top: 50px;
   right: 50px;
   font-size: 2rem;
-  -webkit-transform: scaleX(1.2);
-          transform: scaleX(1.2);
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
+  color: #F7B733;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.modal__close:hover {
+  cursor: pointer;
+  color: #4ABDAC;
+}
+.search-form {
+
+	padding: 0;
+}
+.search-form input {
+  padding: 10px;
+}
+.search-form .form-control {
+  width: 200px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #4ABDAC;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.search-form .form-control:hover {
+  background-color: rgba(74,189,172, .1);
+}
+.search-form .form-control:focus {
+  width: 220px;
+}
+.search-form .search-submit {
+  margin-left: -5px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #4ABDAC;
+  color: #fff;
+  background-color: #F7B733;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.search-form .search-submit:hover {
+  cursor: pointer;
+  background-color: #4ABDAC;
 }
 .footer {
 	/*background-color: rgba($mainRed, .7);*/

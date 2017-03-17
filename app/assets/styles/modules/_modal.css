@@ -30,7 +30,12 @@
 		top: 50px;
 		right: 50px;
 		font-size: 2rem;
-		transform: scaleX(1.2);
-		transform-origin: 100% 0;
+		color: $third;
+		transition: all .3s ease;
+
+		&:hover {
+			cursor: pointer;
+			color: $primary;
+		}
 	}
 }

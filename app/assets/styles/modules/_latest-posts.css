@@ -40,4 +40,17 @@
 	&--front-page {
 		margin-bottom: 3.5rem;
 	}
+
+	&--category {
+		margin-bottom: 3.5rem;
+	}
+
+	&--single {
+		margin-top: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	&--search {
+		margin-bottom: 3.5rem;
+	}
 }

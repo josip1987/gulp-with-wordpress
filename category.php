@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="section section--latest-posts latest-posts">
+<div class="section section--latest-posts latest-posts latest-posts--category">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
 			<span class="section-title--base"><?php echo single_cat_title(); ?></span>
@@ -7,7 +7,7 @@
 		</div>
 
 		<div class="section-description">
-			<p>Latest posts in <?php echo single_cat_title(); ?> category</p>
+			<p>Latest posts in <strong><?php echo single_cat_title(); ?></strong></p>
 		</div>
 		<div class="row">
 			<?php $args = array(

@@ -1,10 +1,11 @@
 <?php get_header(); ?>
-<div class="section section--latest-posts latest-posts">
+<div class="section section--latest-posts latest-posts latest-posts--search">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
 			<span class="section-title--base">Search Results</span>
 			<span class="section-title--shadow">Search Results</span>
 		</div>
+		<p>Search results for <strong><?php echo get_search_query() ?></strong></p>
 		<div class="row">
 			<?php $args = array(
 				//'post_type' => 'blog_post',

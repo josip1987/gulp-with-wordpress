@@ -46,10 +46,10 @@
 					<?php get_search_form(); ?>
 				</div>
 			</div>
-			<div class="modal__close">X</div>
+			<div class="modal__close" title="Close"><i class="fa fa-times" aria-hidden="true"></i></div>
 		</div> <!--/.modal -->
 
 		<?php wp_footer(); ?> <!-- load js file at the bottom -->
-	
+		<!--script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58cc18bd4f61c2fa"></script--> 
 	</body>
 </html>

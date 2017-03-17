@@ -14,12 +14,12 @@
 				<?php get_sidebar(); ?>
 			</div>
 		</div> <!--/.row -->
+		<br><br><hr>
 	</div> <!--/.wrapper -->
 </div> <!--/.section -->
 
-<div class="section section--latest-posts latest-posts latest-posts--front-page">
+<div class="section section--latest-posts latest-posts latest-posts--single">
 	<div class="wrapper">
-		<hr><br><br>
 		<div class="section-title wow bounceInLeft">
 			<span class="section-title--base">Latest entries</span>
 			<span class="section-title--shadow">Latest entries</span>

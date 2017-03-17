@@ -1,0 +1,37 @@
+.search-form {
+
+	padding: 0;
+
+	& input {
+	   padding: 10px;
+	}
+
+	& .form-control {
+		width: 200px;
+		border-radius: 5px 0 0 5px;
+		border: 1px solid $primary;
+		transition: all .3s ease;
+
+		&:hover {
+			background-color: rgba($primary, .1);
+		}
+
+		&:focus {
+			width: 220px;
+		}
+	}
+
+	& .search-submit {
+		margin-left: -5px;
+		border-radius: 0 5px 5px 0;
+		border: 1px solid $primary;
+		color: #fff;
+		background-color: $third;
+		transition: all .3s ease;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $primary;			
+		}
+	}
+}
