@@ -6,11 +6,9 @@
 	<title></title>
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>><!-- remove feature image with if statement ie needed -->
+<body <?php body_class(); ?>>
 	<?php $featured = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full') ?>
-
 	<?php $featured = $featured[0]; ?>
-
 
 	<header class="header">
 		<div class="header--wrapper">
@@ -28,9 +26,20 @@
 		</div> <!--/.wrapper -->
 	</header> <!--/.header -->
 
+	<?php if(is_category()): ?>
+		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/circles.png); 
+		background-repeat: repeat; background-attachment: fixed;">
+	<?php elseif (is_single()): ?>
+		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/diamonds.png); 
+		background-repeat: repeat; background-attachment: fixed;">
+	<?php elseif (is_search()): ?>
+		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/diamonds.png); 
+		background-repeat: repeat; background-attachment: fixed;">
+	<?php else: ?>
 	<div class="large-hero" style="background-image:url(<?php echo $featured ?>); 
 		background-repeat: no-repeat; background-size: cover; 
 		background-attachment: fixed; background-position: center center;">
+	<?php endif; ?>
 		<div class="wrapper">
 			<div class="large-hero__text-content">
 				<?php if(is_front_page()): ?>
@@ -47,6 +56,12 @@
 					<div class="large-hero__subtitle">
 						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
 							<?php echo the_archive_title(); ?>
+						</h2>
+					</div>
+				<?php elseif (is_search()): ?>
+					<div class="large-hero__subtitle">
+						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
+							<?php echo "Search Results" ?>
 						</h2>
 					</div>
 				<?php else: ?>
@@ -68,8 +83,8 @@
 <div class="pop-up">
   <div id="pop-up">
     <div class="container">
-      <h1>Kung Foo Your Skills</h1>
-      <p>Join the mailing list to be spammed with useless ninja tips</p>
+      <h1></h1>
+      <p>tips</p>
       <input type="email" placeholder="email" required>
       <button>Hii Ya</button>
       <div class="cross">x</div>
