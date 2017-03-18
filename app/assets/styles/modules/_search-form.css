@@ -7,17 +7,25 @@
 	}
 
 	& .form-control {
-		width: 200px;
+		width: 170px;
 		border-radius: 5px 0 0 5px;
 		border: 1px solid $primary;
 		transition: all .3s ease;
 
-		&:hover {
-			background-color: rgba($primary, .1);
+		&:focus {
+			width: 190px;
 		}
 
-		&:focus {
-			width: 220px;
+		@mixin atMedium {
+			width: 200px;
+
+			&:focus {
+				width: 220px;
+			}
+		}
+
+		&:hover {
+			background-color: rgba($primary, .1);
 		}
 	}
 

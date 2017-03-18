@@ -27,11 +27,10 @@
 		color: $mainBlack;
 		font-weight: 100;
 		margin: 0;
-		text-shadow: 4px 4px 0 rgba($primary, .1);
 
 		@mixin atSmall {
 			padding-top: 80px;
-			font-size: 2rem;
+			font-size: 1.7rem;
 		}
 	}
 

@@ -11,6 +11,15 @@
         }
     }
 
+    &--categories {
+        padding-top: 0;
+
+         @mixin atMedium {
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+        }       
+    }
+
     &--latest-posts {
         padding-top: 3rem;
         padding-bottom: 2rem;
@@ -87,4 +96,10 @@
     /*margin: 15px 0 20px;*/
     top: -5px;
     background-color: $mainBlack;
+}
+
+.section-description {
+    @mixin maxMedium {
+        text-align: justify;
+    }
 }

@@ -4,6 +4,8 @@
 	<div class="wrapper">
 		<div class="row">
 			<div class="row__medium-8">
+				<p>Published on: <span><?php the_time(get_option('date_format')); ?></span>
+				<strong>By:</strong> admin <span><?php the_author(); ?></span></p>
 				<?php 
 					while(have_posts()): the_post();
 						the_content();
@@ -12,6 +14,9 @@
 			</div>
 			<div class="row__medium-4">
 				<?php get_sidebar(); ?>
+				<aside class="aside">
+					<?php get_search_form(); ?>
+				</aside>
 			</div>
 		</div> <!--/.row -->
 		<br><br><hr>

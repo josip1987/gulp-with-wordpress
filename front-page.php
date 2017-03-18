@@ -21,7 +21,7 @@
 	</div> <!--/.wrapper -->
 </div> <!--/.section .about -->
 
-<div class="section section--about about">
+<div class="section section--about section--categories about">
 	<div class="wrapper">
 		<div class="section-title wow jello">
 			<span class="section-title--base">Categories</span>

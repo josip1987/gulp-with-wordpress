@@ -490,12 +490,11 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   color: #161616;
   font-weight: 100;
   margin: 0;
-  text-shadow: 4px 4px 0 rgba(74,189,172, .1);
 }
 @media(min-width: 480px) {
   .large-hero__title {
     padding-top: 80px;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .large-hero__subtitle {
@@ -530,7 +529,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 .latest-posts__content {
   text-align: center;
-  max-width: 400px;/*** check ***/
+  max-width: 400px;
   margin: 30px 10px;
   padding: 40px 10px;
   border: 1px solid rgba(74,189,172, .2);
@@ -542,7 +541,9 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 @media(max-width: 799px) {
   .latest-posts__content {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
   }
 }
 .latest-posts__content--shadow {
@@ -939,6 +940,15 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     padding-top: 4.5rem;
   }
 }
+.section--categories {
+  padding-top: 0;
+}
+@media(min-width: 800px) {
+  .section--categories {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
 .section--latest-posts {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -1013,10 +1023,14 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     top: -5px;
     background-color: #161616;
 }
+@media(max-width: 799px) {
+  .section-description {
+    text-align: justify;
+  }
+}
 .categories {
 	background: -webkit-linear-gradient(rgba(74,189,172, 0.9), rgba(74,189,172, 0.9)), url('app/assets/images/book.jpg') top center no-repeat;
 	background: linear-gradient(rgba(74,189,172, 0.9), rgba(74,189,172, 0.9)), url('app/assets/images/book.jpg') top center no-repeat;
-	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('app/assets/images/book.jpg') top center no-repeat;*/
 	background-size: cover;
 	background-attachment: fixed;
 	height: 200px;
@@ -1024,17 +1038,34 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .categories__list {
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin-top: -50px;
+}
+@media(min-width: 800px) {
+  .categories__list {
+    margin-top: -20px;
+  }
+}
+@media(min-width: 1010px) {
+  .categories__list {
+    margin-top: 0;
+  }
 }
 .categories__list--item {
-  display: inline-block;
-  padding: 10px;
-  font-size: 1.7rem;
+  display: block;
+  font-size: 1.3rem;
+  padding-bottom: 3px;
 }
-.categories__list--item:not(:first-child)::before {
-  content: "•";
-  margin-right: 10px;
-  color: #fff;
+@media(min-width: 800px) {
+  .categories__list--item {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.7rem;
+  }
+  .categories__list--item:not(:first-child)::before {
+    content: "•";
+    margin-right: 10px;
+    color: #fff;
+  }
 }
 .categories__list--item a {
   color: #fff;
@@ -1143,6 +1174,16 @@ div.wpcf7-validation-errors {
   list-style: none;
   padding-right: 0;
 }
+.aside .search-form {
+  margin-left: 40px;
+}
+.aside a {
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+.aside a:hover {
+  color: #4ABDAC;
+}
 .modal {
 	position: fixed;
 	z-index: 9999;
@@ -1174,8 +1215,8 @@ div.wpcf7-validation-errors {
 }
 .modal__close {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 10px;
+  right: 10px;
   font-size: 2rem;
   color: #F7B733;
   -webkit-transition: all .3s ease;
@@ -1193,17 +1234,25 @@ div.wpcf7-validation-errors {
   padding: 10px;
 }
 .search-form .form-control {
-  width: 200px;
+  width: 170px;
   border-radius: 5px 0 0 5px;
   border: 1px solid #4ABDAC;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
+.search-form .form-control:focus {
+  width: 190px;
+}
+@media(min-width: 800px) {
+  .search-form .form-control {
+    width: 200px;
+  }
+  .search-form .form-control:focus {
+    width: 220px;
+  }
+}
 .search-form .form-control:hover {
   background-color: rgba(74,189,172, .1);
-}
-.search-form .form-control:focus {
-  width: 220px;
 }
 .search-form .search-submit {
   margin-left: -5px;

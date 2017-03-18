@@ -1,6 +1,5 @@
 .categories {
 	background: linear-gradient(rgba($primary, 0.9), rgba($primary, 0.9)), url('app/assets/images/book.jpg') top center no-repeat;
-	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('app/assets/images/book.jpg') top center no-repeat;*/
 	background-size: cover;
 	background-attachment: fixed;
 	height: 200px;
@@ -8,18 +7,32 @@
 	&__list {
 		text-align: center;
 		padding: 0;
-		margin: 0;
+		margin-top: -50px;
+
+		@mixin atMedium {
+			margin-top: -20px;
+		}
+
+		@mixin atLarge {
+			margin-top: 0;
+		}
 	}
 
 	&__list--item {
-		display: inline-block;
-		padding: 10px;
-		font-size: 1.7rem;
+		display: block;
+		font-size: 1.3rem;
+		padding-bottom: 3px;
 
-		&:not(:first-child)::before {
-			content: "•";
-			margin-right: 10px;
-			color: #fff;
+		@mixin atMedium {
+			display: inline-block;
+			padding: 10px;
+			font-size: 1.7rem;
+
+			&:not(:first-child)::before {
+				content: "•";
+				margin-right: 10px;
+				color: #fff;
+			}
 		}
 
 		& a {
