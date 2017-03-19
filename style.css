@@ -502,7 +502,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 .large-hero__subtitle {
   font-family: 'Bangers', cursive;
-  font-size: 2.7rem;
+  font-size: 3rem;
   color: #FC4A1A;
   text-transform: uppercase;
   text-shadow: 5px 5px 0 rgba(0, 0, 0, .2);
@@ -539,6 +539,14 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 		color: #C66D4B;
 		text-shadow: 5px 5px 0 rgba(74,189,172, .9);
 		-webkit-text-stroke: 1px black;
+}
+@media(max-width: 480px) {
+  .search .large-hero__text-content,
+.single-post .large-hero__text-content,
+.page-template-page-contact .large-hero__text-content,
+.page-template-page-blog .large-hero__text-content {
+    position: relative;
+  }
 }
 .latest-posts__content {
   text-align: center;
@@ -713,6 +721,11 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .header--darker .header__menu ul li a:hover {
   color: #161616;
 }
+@media(max-width: 799px) {
+  .header {
+    height: 38px;
+  }
+}
 @media(min-width: 800px) {
   .header--wrapper {
     padding-left: 18px;
@@ -759,8 +772,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   margin-left: 15px;
   float: left;
   text-decoration: none;
-  font-size: 1.2rem;/*transform: skew(-20deg);
-			background-color: lightgreen;*/
+  font-size: 1.2rem;
   padding: 10px;
 }
 .header__menu a {
@@ -844,6 +856,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   .header__menu {
     width: 100%;
     right: 0;
+    margin-top: -32px;
   }
   .menu-main-menu-container {
     height: 0px;
@@ -851,6 +864,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   .header__logo img {
     height: 100px;
     top: -15px;
+    z-index: 99;
   }
   .header__menu ul {
     background-color: #F7B733;
@@ -990,7 +1004,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	position: relative;
     width: auto;
     height: auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     text-transform: uppercase;
     padding-top: 0;
@@ -1005,7 +1019,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   color: #4ABDAC;
 }
 .section-title--shadow {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase;
   left: 0;
@@ -1041,6 +1055,11 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 @media(max-width: 799px) {
   .section-description {
     text-align: justify;
+  }
+}
+@media(max-width: 799px) {
+  .section--latest-posts .section-title--shadow {
+    font-size: 2rem;
   }
 }
 .categories {

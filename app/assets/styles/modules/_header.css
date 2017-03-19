@@ -20,6 +20,10 @@
 		}
 	}
 
+	@mixin maxMedium {
+		height: 38px;
+	}
+
 	&--wrapper {
 
 		@mixin atMedium {
@@ -37,7 +41,7 @@
 		position: absolute;
 		top: -30px;
 		transition: all .3s ease;
-		
+
 		@mixin atMedium {
 			float: left;
 			/*height: 70px;*/
@@ -67,8 +71,6 @@
 			float: left;
 			text-decoration: none;
 			font-size: 1.2rem;
-			/*transform: skew(-20deg);
-			background-color: lightgreen;*/
 			padding: 10px;			
 		}
 

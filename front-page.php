@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-	<!--?php get_sidebar(); ?-->
 
 <div class="section section--about about">
 	<div class="wrapper">
@@ -90,4 +89,5 @@
 		</div> <!--/.row -->
 	</div> <!--/.wrapper -->
 </div> <!--/.section .latest-posts -->
+
 <?php get_footer(); ?>

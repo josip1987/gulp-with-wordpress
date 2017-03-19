@@ -69,6 +69,7 @@
 	.header__menu {
 		width: 100%;
 		right: 0;
+		margin-top: -32px;
 	}
 
 	.menu-main-menu-container {
@@ -78,6 +79,7 @@
 	.header__logo img {
 		height: 100px;
 		top: -15px;
+		z-index: 99;
 	}
 
 	.header__menu ul {
