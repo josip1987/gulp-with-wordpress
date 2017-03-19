@@ -1,6 +1,12 @@
 
 /*** animate arrow ***/
 
+#scroll-down {
+    @mixin maxMedium {
+        font-size: .8rem;
+    }
+}
+
 .arrow a span {
     position: absolute;
     bottom: 0;

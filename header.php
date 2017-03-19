@@ -32,10 +32,10 @@
 		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/circles.png); 
 		background-repeat: repeat; background-attachment: fixed;">
 	<?php elseif (is_single()): ?>
-		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/diamonds.png); 
+		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/lined_paper.png); 
 		background-repeat: repeat; background-attachment: fixed;">
 	<?php elseif (is_search()): ?>
-		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/diamonds.png); 
+		<div class="large-hero" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/app/assets/images/lined_paper.png); 
 		background-repeat: repeat; background-attachment: fixed;">
 	<?php else: ?>
 	<div class="large-hero" style="background-image:url(<?php echo $featured ?>); 

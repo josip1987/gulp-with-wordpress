@@ -8,3 +8,12 @@
 		padding: 2rem 0 1rem 0;
 	}
 }
+
+.article-divider {
+	content: "";
+    display: block;
+    height: 4px;
+    width: 35px;
+    background-color: $third;
+    margin-bottom: 2rem;
+}

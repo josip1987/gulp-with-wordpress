@@ -1,8 +1,14 @@
 .footer {
-	/*background-color: rgba($mainRed, .7);*/
-	background-color: $mainGrey;
+	background-color: $primary;
 	margin-bottom: -20px;
-	/*position: relative;*/
+	border-top: 5px solid $third;
+
+	@mixin maxMedium {
+		.footer_menu ul {
+			padding: 0;
+			text-align: center;
+		}
+	}
 
 	&__content {
 		

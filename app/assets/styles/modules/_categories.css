@@ -3,6 +3,7 @@
 	background-size: cover;
 	background-attachment: fixed;
 	height: 200px;
+	border-bottom: 5px solid $third;
 
 	&__list {
 		text-align: center;
@@ -41,7 +42,7 @@
 			transition: color .3s ease;
 
 			&:hover {
-				color: $mainBlack;
+				color: $third;
 			}
 		}
 	}

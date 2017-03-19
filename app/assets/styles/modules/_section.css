@@ -64,7 +64,7 @@
     }
 
     &--base {
-    	color: $mainGrey;
+    	color: $primary;
     }
 
 	&--shadow {
@@ -91,11 +91,16 @@
     position: relative;
     content: "";
     display: block;
-    width: 55px;
-    height: 4px;
-    /*margin: 15px 0 20px;*/
-    top: -5px;
+    width: 30px;
+    height: 3px;
+    top: -2px;
     background-color: $mainBlack;
+
+    @mixin atMedium {
+        height: 4px;
+        width: 55px;
+        top: -5px;
+    }
 }
 
 .section-description {

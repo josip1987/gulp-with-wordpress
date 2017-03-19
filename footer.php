@@ -50,6 +50,6 @@
 		</div> <!--/.modal -->
 
 		<?php wp_footer(); ?> <!-- load js file at the bottom -->
-		<!--script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58cc18bd4f61c2fa"></script--> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58cc18bd4f61c2fa"></script> 
 	</body>
 </html>

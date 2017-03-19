@@ -32,7 +32,9 @@
 				
 				<div class="row__medium-4">
 					<div class="latest-posts__content latest-posts__content--shadow wow bounceInLeft">
-						<?php the_post_thumbnail('entry', array('class' => 'latest-posts__image')); ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail('entry', array('class' => 'latest-posts__image')); ?>
+						</a>
 						<h3 class="latest-posts--title"><?php the_title(); ?></h3>
 						<p class="latest-posts--date">
 							Published on: <span><?php the_time(get_option('date_format')); ?></span>

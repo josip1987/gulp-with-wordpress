@@ -1,15 +1,5 @@
-/*.skew {
-    border: 1px solid rgba($mainGrey, .7);
-    border-radius: 3px;
-    transform: skew(-20deg);    
-}
-
-.noskew {
-    transform: skew(20deg);
-}*/
-
 .skew-button {
-	border: 1px solid rgba($mainGrey, .7);
+	border: 1px solid rgba($primary, .7);
     border-radius: 3px;
     background: #FFF;
     transform: skew(-20deg);
@@ -21,7 +11,7 @@
     text-decoration:none;
     z-index: 10;
     transform: skew(20deg);
-    color: $mainGrey;
+    color: $primary;
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
@@ -43,7 +33,7 @@
     width: 0;
     color: #fff;
     height: 100%;
-    background: rgba($mainGrey, .9);
+    background: rgba($primary, .9);
     opacity: 0;  
     transition: all .2s linear;
 }

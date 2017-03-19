@@ -9,7 +9,7 @@
 
 	&--darker {
 		background-color: rgba($primary, .9);
-		box-shadow: 5px 5px 3px -3px rgba($mainGrey, .7);
+		box-shadow: 5px 5px 3px -3px rgba($primary, .7);
 
 		.header__menu ul li a {
 			color: #fff;
@@ -73,7 +73,7 @@
 		}
 
 		& a {
-			color: $mainGrey;
+			color: $primary;
 			transition: color .3s ease;
 
 			&:hover {
