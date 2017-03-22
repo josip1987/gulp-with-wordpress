@@ -46,7 +46,6 @@
 			<div class="large-hero__text-content">
 				<?php if(is_front_page()): ?>
 					<?php $description = get_bloginfo('description', 'display'); ?>
-					<h1 class="large-hero__title wow bounceInRight">welcome to</h1>
 					<div class="large-hero__subtitle">
 						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
 							<?php echo $description; ?>
@@ -74,7 +73,7 @@
 					</div>
 				<?php endif; ?>
 				<div class="arrow" id="scroll-down">
-					<a href="#" id="scroll"><span></span>Scroll down</a>
+					<a href="#"><span></span>Scroll down</a>
 				</div>
 			</div> <!--/.large-hero__text-content -->
 		</div> <!--/.large-hero -->

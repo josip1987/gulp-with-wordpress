@@ -3,8 +3,8 @@
 	position: relative;
 	border-bottom: 5px solid $third;
 
-	@mixin atSmall {
-		height: 650px;
+	@mixin atMedium {
+		height: 100%;
 	}
 
 	&__text-content {		
@@ -29,7 +29,7 @@
 
 		@mixin atSmall {
 			padding-top: 80px;
-			font-size: 1.7rem;
+			font-size: 1.5rem;
 		}
 	}
 
@@ -40,6 +40,7 @@
 		text-transform: uppercase;
 		text-shadow: 5px 5px 0 rgba(0, 0, 0, .2);
 		margin-top: 5px;
+		-webkit-text-stroke: 1px $mainBlack;
 
 		@mixin atSmall {
 			font-size: 4rem;
@@ -48,10 +49,6 @@
 
 		@mixin atLarge {
 			font-size: 5rem;
-		}
-
-		@mixin maxMedium {
-			-webkit-text-stroke: 1px $mainBlack;
 		}
 
 		&--add {
@@ -75,10 +72,18 @@
 
 .search .large-hero__text-content,
 .single-post .large-hero__text-content,
+.category .large-hero__text-content,
 .page-template-page-contact .large-hero__text-content,
 .page-template-page-blog .large-hero__text-content {
 
 	@mixin maxSmall {
 		position: relative;
+		padding-top: 150px;
 	}
+}
+
+.single-post .large-hero__text-content {
+	@mixin maxSmall {
+		padding-top: 120px;
+	}	
 }

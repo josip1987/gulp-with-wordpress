@@ -37,16 +37,15 @@
 
 	&__logo img {
 		float: left;
-		/*height: 70px;*/
 		position: absolute;
 		top: -30px;
 		transition: all .3s ease;
 
 		@mixin atMedium {
 			float: left;
-			/*height: 70px;*/
 			position: absolute;
 			top: -30px;
+			left: 50px;
 
 			.header--darker & {
 				transform: scale(.5);

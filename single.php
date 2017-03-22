@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="section">
+<div class="section" id="scroll">
 	<div class="wrapper">
 		<div class="row">
 			<div class="row__medium-8">

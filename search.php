@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="section section--latest-posts latest-posts latest-posts--search">
+<div class="section section--latest-posts latest-posts latest-posts--search" id="scroll">
 	<div class="wrapper">
 		<div class="section-title wow bounceInLeft">
 			<span class="section-title--base">Search Results</span>

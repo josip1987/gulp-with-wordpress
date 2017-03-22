@@ -94,7 +94,7 @@
 	.header__menu ul.open {
 		/*display: block;*/
 		transform: translateX(0);
-		box-shadow: 10px 10px 6px -6px rgba($mainGrey, .7);
+		box-shadow: 10px 10px 6px -6px rgba($primary, .7);
 		
 	}
 
@@ -102,7 +102,7 @@
 		float: none;
 		text-align: center;
 		margin: 0;
-		border-bottom: 1px solid rgba($mainGrey, .1);
+		border-bottom: 1px solid rgba($primary, .1);
 
 		& a {
 			color: #fff;

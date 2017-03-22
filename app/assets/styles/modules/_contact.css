@@ -4,6 +4,10 @@
 	margin: 0 auto;
 	padding: 0 0 50px 0;
 
+	@mixin maxMedium {
+		margin-bottom: -2.5rem;
+	}
+
 
 	& input, & textarea {
 		width: 100%;

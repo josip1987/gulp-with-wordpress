@@ -13,8 +13,8 @@ class SmoothScroll {
 
 	scrollDown() {
 		$("body").animate({
-			scrollTop: this.topValue + 70 + 'px'
-		}, 1000);
+			scrollTop: this.topValue - 75 + 'px'
+		}, 700);
 	}
 }
 

@@ -5,7 +5,7 @@
 		max-width: 400px; 
 		margin: 30px 10px;
 		padding: 40px 10px;
-		border: 1px solid rgba($mainGrey, .2);
+		border: 1px solid rgba($primary, .2);
 		border-radius: 3px;		
 		transition: transform .1s;
 
@@ -16,12 +16,12 @@
 		}
  
 		&--shadow {
-			box-shadow: 10px 10px 6px -6px rgba($mainGrey, .7);
+			box-shadow: 10px 10px 6px -6px rgba($primary, .7);
 		}
 
 		&:hover {
 			transform: translate3d(0,-3px,0);
-			box-shadow: 10px 10px 6px -6px rgba($mainGrey, .9);
+			box-shadow: 10px 10px 6px -6px rgba($primary, .9);
 		}
 	}
 
@@ -36,15 +36,25 @@
 	}
 
 	&--date {
-		color: $mainGrey;
+		color: $primary;
 	}
 
 	&--front-page {
-		margin-bottom: 3.5rem;
+		margin-bottom: 2.5rem;
+
+		@mixin maxMedium {
+			margin-top: -30px;
+		}
 	}
 
 	&--category {
-		margin-bottom: 3.5rem;
+		margin-top: -1.5rem;
+		margin-bottom: 1rem;
+
+		@mixin atMedium {
+			margin-top: 0;
+			margin-bottom: 3.5rem;
+		}
 	}
 
 	&--single {
@@ -54,5 +64,16 @@
 
 	&--search {
 		margin-bottom: 3.5rem;
+		margin-top: -2rem;
+
+		@mixin atMedium {
+			margin-top: 0;
+		}
+	}
+
+	&--blog {
+		@mixin maxMedium {
+			margin-top: -1.5rem;
+		}
 	}
 }
