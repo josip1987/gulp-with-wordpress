@@ -16,8 +16,9 @@
 		width: 20px;
 		height: 3px;
 		background-color: $mainBlack;
+		border-radius: 20px;
 		transform-origin: 0 0;
-		transition: transform .15s ease-out;
+		transition: transform .3s ease-out;
 	}
 
 	&--middle {
@@ -28,6 +29,7 @@
 		width: 20px;
 		height: 3px;
 		background-color: $mainBlack;
+		border-radius: 20px;
 		transition: all .15s ease-out;
 		transform-origin: 0 50%;
 	}
@@ -40,22 +42,23 @@
 		width: 20px;
 		height: 3px;
 		background-color: $mainBlack;
+		border-radius: 20px;
 		transform-origin: 0 100%;
 		transition: all .3s ease-out;
 	}
 
 	&--close-x {
 		&::before {
-			transform: rotate(405deg) scaleX(1.25); /*original: 45deg*/
+			transform: rotate(45deg) scaleX(1.25); /*405deg*/
 		}
 
 		.header__toggle--middle {
 			opacity: 0;
-			transform: scaleX(0);
+			left: -300px;
 		}
 
 		&::after {
-			transform: rotate(315deg) scaleX(1.25) translateY(1px); /*-45deg*/
+			transform: rotate(-45deg) scaleX(1.25) translateY(1px); /*315deg*/
 		}
 	}
 

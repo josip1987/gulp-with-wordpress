@@ -18,6 +18,13 @@
 				color: $mainBlack;
 			}
 		}
+
+		.header__toggle--middle, 
+		.header__toggle::before, 
+		.header__toggle::after {
+			transition: all .3s ease;
+			background-color: white;
+		}
 	}
 
 	@mixin maxMedium {

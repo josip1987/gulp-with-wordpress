@@ -5,9 +5,11 @@
 		<div class="row">
 			<div class="row__medium-8">
 				<div class="addthis_inline_share_toolbox"></div>
-				<p><strong>Published on: </strong><span><?php the_time(get_option('date_format')); ?></span>
+				<p class="article-date"><strong>Published on: </strong><span><?php the_time(get_option('date_format')); ?></span>
 				<br>
 				<strong>By:</strong> admin <span><?php the_author(); ?></span></p>
+				<!--p class="article-tags">Tags: <?php the_tags(); ?></p-->
+				<p class="article-category">Category: <?php the_category(' '); ?></p>
 				<span class="article-divider"></span>
 				<?php 
 					while(have_posts()): the_post();

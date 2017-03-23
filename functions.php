@@ -42,6 +42,12 @@
 			'id' => 'sidebar_widget',
 			'description' => 'Sidebar Widgets'
 		) );
+
+		register_sidebar(array(
+			'name' => __('About'),
+			'id' => 'about_widget',
+			'description' => 'Description Widgets'
+		) );
 	}
 
 	add_action('widgets_init', 'blog_widgets');

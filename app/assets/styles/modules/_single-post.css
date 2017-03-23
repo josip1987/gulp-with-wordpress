@@ -7,6 +7,23 @@
 	& .section {
 		padding: 2rem 0 1rem 0;
 	}
+
+	& .article-category a {
+		background-color: $mainBlue;
+		color: #fff;
+		font-size: .8rem;
+		border-radius: 8px;
+		padding: 3px 5px;
+		transition: all .3s ease;
+	}
+
+	& .article-category a:nth-child(odd) {
+		background-color: $secondary;
+	}
+
+	& .article-category a:hover {
+		background-color: $primary;
+	}
 }
 
 .article-divider {
@@ -17,3 +34,6 @@
     background-color: $third;
     margin-bottom: 2rem;
 }
+
+
+

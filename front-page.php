@@ -7,15 +7,7 @@
 			<span class="section-title--shadow">About</span>
 		</div>
 		<div class="section-description">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-			Consequatur neque voluptas sint ullam itaque hic odio quia provident, 
-			dicta ad laboriosam odit, fugiat omnis, earum natus ab qui aut accusa
-			ntium.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-			Consequatur neque voluptas sint ullam itaque hic odio quia provident, 
-			dicta ad laboriosam odit, fugiat omnis, earum natus ab qui aut accusa
-			ntium.
-			</p>
+			<p><?php dynamic_sidebar('about_widget'); ?></p>
 		</div>
 	</div> <!--/.wrapper -->
 </div> <!--/.section .about -->
@@ -55,10 +47,7 @@
 			<span class="section-title--shadow">Latest entries</span>
 		</div>
 		<div class="section-description">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-			Consequatur neque voluptas sint ullam itaque hic odio quia provident, 
-			dicta ad laboriosam odit, fugiat omnis, earum natus ab qui aut accusa
-			ntium.</p>
+			<p>Latest Blog posts</p>
 		</div>
 		<div class="row">
 			<?php $args = array(
