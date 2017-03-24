@@ -14,8 +14,7 @@
 	add_action('wp_enqueue_scripts', 'blog_styles');
 
 	register_nav_menus( array(
-		'main_menu' => __('Main Menu', 'blogmenu'),
-		'social_menu' => __('Social Menu', 'socialmenu')
+		'main_menu' => __('Main Menu', 'blogmenu')
 	) );
 
 	//hook last item to wp_nav_menu

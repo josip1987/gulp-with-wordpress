@@ -18,18 +18,13 @@
 							   ab aperiam. Assumenda, perferendis.
 							</p>
 						</div> <!--/.row__large-8 -->
-						<div class="row__large-4 footer_menu">
-							<!--?php dynamic_sidebar('contact_widget'); ?-->
-							<?php 
-								wp_nav_menu(array(
-									'theme_location' => 'social_menu',
-									'container' => 'div',
-									'container_class' => 'social',
-									'menu_class' => 'social-menu',
-									'link_before' => '<span class="sr-only">',
-									'link_after' => '</span>'
-								) );
-							?>
+						<div class="row__large-4">
+							<ul class="footer__social">
+								<li><a href="http://twitter.com/RCtutorials" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								<li><a href="http://facebook.com/randomcodingtutorials" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+								<li><a href="http://github.com/RandomCodingTutorials" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a></li>
+							</ul>
 						</div> <!--/.row__large-4 -->
 					</div>
 				</div> <!--/.row -->

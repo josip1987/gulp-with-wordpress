@@ -5,11 +5,19 @@
 	position: absolute;
 	position: fixed;
 	z-index: 10;
-	transition: all .3s ease;
+	transition: all .4s ease-in-out;
 
 	&--darker {
+		height: 60px;
 		background-color: rgba($primary, .9);
 		box-shadow: 5px 5px 3px -3px rgba($primary, .7);
+		
+		& .header__menu ul li {
+
+			@mixin atMedium {
+				padding: 4px 10px 5px 5px;
+			}
+		}
 
 		.header__menu ul li a {
 			color: #fff;
@@ -46,7 +54,7 @@
 		float: left;
 		position: absolute;
 		top: -30px;
-		transition: all .3s ease;
+		transition: all .1s ease-in-out;
 
 		@mixin atMedium {
 			float: left;
@@ -55,8 +63,8 @@
 			left: 50px;
 
 			.header--darker & {
-				transform: scale(.5);
-				top: -65px;
+				transform: scale(.4);
+				top: -70px;
 				left: 20px;
 			}
 		}

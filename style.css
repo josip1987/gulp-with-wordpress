@@ -756,12 +756,18 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	position: absolute;
 	position: fixed;
 	z-index: 10;
-	-webkit-transition: all .3s ease;
-	transition: all .3s ease;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 .header--darker {
+  height: 60px;
   background-color: rgba(74,189,172, .9);
   box-shadow: 5px 5px 3px -3px rgba(74,189,172, .7);
+}
+@media(min-width: 800px) {
+  .header--darker .header__menu ul li {
+    padding: 4px 10px 5px 5px;
+  }
 }
 .header--darker .header__menu ul li a {
   color: #fff;
@@ -794,8 +800,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   float: left;
   position: absolute;
   top: -30px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 @media(min-width: 800px) {
   .header__logo img {
@@ -805,9 +811,9 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     left: 50px;
   }
   .header--darker .header__logo img {
-    -webkit-transform: scale(.5);
-            transform: scale(.5);
-    top: -65px;
+    -webkit-transform: scale(.4);
+            transform: scale(.4);
+    top: -70px;
     left: 20px;
   }
 }
@@ -1393,7 +1399,7 @@ div.wpcf7-validation-errors {
 	border-top: 5px solid #F7B733;
 }
 @media(max-width: 799px) {
-  .footer .footer_menu ul {
+  .footer .footer__social {
     padding: 0;
     text-align: center;
   }
@@ -1404,28 +1410,23 @@ div.wpcf7-validation-errors {
 .footer__info {
   text-align: center;
 }
-.social-menu li:last-child {
-	display: none;
-}
-.social {
+.footer__social {
 	list-style: none;
 }
-.social li {
+.footer__social li {
 	position: relative;
 	display: inline-block;
+	margin-left: 3px;
+	margin-top: -3px;
 }
-.social li a:before {
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 5px;
-	font-family: 'fontAwesome';
-	font-size: 40px;
+.footer__social li a {
+	font-size: 2.4rem;
 	color: #fff;
-	content: '\f08e';
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
 }
-.social li a[href*="facebook.com"]::before{content:'\f082';}
-.social li a[href*="plus.google.com"]::before{content:'\f0d4';}
-.social li a[href*="twitter.com"]::before{content:'\f081';}
-.social li a[href*="github.com"]::before{content:'\f09b';}
+.footer__social li a:hover {
+  color: #F7B733;
+}
 
 
