@@ -53,6 +53,9 @@
 							bounceInRight" data-wow-delay="2s">&#46;com</span>
 						</h2>
 					</div>
+					<div class="arrow" id="scroll-down">
+						<a href="#"><span></span>Scroll down</a>
+					</div>
 				<?php elseif (is_category()): ?>
 					<div class="large-hero__subtitle">
 						<h2 class="large-hero__subtitle wow bounceInLeft  data-wow-delay="5s"">
@@ -72,9 +75,9 @@
 						</h2>
 					</div>
 				<?php endif; ?>
-				<div class="arrow" id="scroll-down">
+				<!--div class="arrow" id="scroll-down">
 					<a href="#"><span></span>Scroll down</a>
-				</div>
+				</div-->
 			</div> <!--/.large-hero__text-content -->
 		</div> <!--/.large-hero -->
 	</div> <!--/.large-hero -->
